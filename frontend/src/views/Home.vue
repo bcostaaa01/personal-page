@@ -1,8 +1,6 @@
 <template>
-    <div class="w-full h-full">
-        <img src="https://images.ctfassets.net/nnkxuzam4k38/2SvDjcgyav5C1DOb79JKXl/d3b06db5bb6bdb4ab237f666b5b4980e/compute-ea4c57a4.png"
-            alt="background" class="w-full h-full object-cover absolute inset-0 -z-10 brightness-50">
-        <div class="flex flex-wrap items-center px-8 pt-4">
+    <div class="flex flex-col items-center justify-center w-full min-h-screen">
+       <div class="flex flex-wrap px-8 pt-4">
             <span class="text-white text-3xl font-bold whitespace-nowrap">Welcome to my blog about software engineering.
                 I am
                 an expert in</span>
