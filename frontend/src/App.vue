@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import Home from './views/Home.vue';
 import TopNavigation from './components/navigation/TopNavigation.vue';
+import router from './routing/router';
 </script>
 
 <template>
@@ -10,7 +10,7 @@ import TopNavigation from './components/navigation/TopNavigation.vue';
       alt="background" class="absolute inset-0 w-full h-full object-cover -z-10 brightness-50" />
     <div class="flex flex-col w-full">
       <TopNavigation class="z-10" />
-      <Home />
+      <router-view />
     </div>
   </div>
 </template>
