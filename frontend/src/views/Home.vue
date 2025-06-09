@@ -101,6 +101,21 @@
         <h2 class="mb-8 text-center text-2xl font-bold text-white md:text-4xl">
           My favourite topics
         </h2>
+
+        <div class="flex flex-wrap justify-center gap-4">
+          <div
+            class="bg-opacity-90 flex h-48 w-48 flex-col items-center justify-center rounded-xl bg-gray-800 transition-all duration-300 hover:bg-gray-700"
+          >
+            <img
+              src="../assets/lego.png"
+              alt="lego"
+              class="rounded-xl object-contain p-2"
+            />
+            <span class="text-center text-2xl font-bold text-white"
+              >Web Components</span
+            >
+          </div>
+        </div>
       </div>
 
       <!-- button to scroll to the next section -->
