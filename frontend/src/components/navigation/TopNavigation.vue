@@ -17,7 +17,6 @@
               { label: 'Contact me', icon: faEnvelope, href: '/contact' },
             ]"
             icon="fa-solid fa-link"
-            href="/links"
           />
         </li>
       </ul>
