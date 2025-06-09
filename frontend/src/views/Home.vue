@@ -129,7 +129,9 @@ import { ref, onMounted, onBeforeUnmount } from 'vue';
 const autoScrollTrigger = ref<HTMLElement | null>(null);
 let observer: IntersectionObserver | null = null;
 
+// scroll to the links section
 const scrollToNextSection = () => {
+  // find the links section to scroll to
   const nextSection = document.getElementById('links');
   if (nextSection) {
     nextSection.scrollIntoView({ behavior: 'smooth' });
@@ -141,6 +143,7 @@ onMounted(() => {
     observer = new IntersectionObserver(
       (entries) => {
         if (entries[0].isIntersecting) {
+          // when user reaches the bottom of the hero section, scroll to the links section
           scrollToNextSection();
         }
       },
