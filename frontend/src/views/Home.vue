@@ -113,11 +113,11 @@
       id="topics"
       class="relative min-h-screen w-full bg-gray-900 px-4 py-20"
     >
-      <div class="mx-auto max-w-2xl px-0">
+      <div class="mx-auto px-20">
         <h2 class="mb-8 text-center text-2xl font-bold text-white md:text-4xl">
           My favourite topics
         </h2>
-        <div class="grid grid-cols-2 justify-center gap-4">
+        <div class="grid grid-cols-3 justify-center gap-10">
           <div
             class="bg-opacity-90 flex h-80 w-80 flex-col items-center justify-between rounded-xl bg-gray-800 p-4 transition-all duration-300 hover:bg-gray-700"
           >
@@ -144,6 +144,20 @@
             </div>
             <span class="mb-2 text-center text-2xl font-bold text-white"
               >UI + UX Development</span
+            >
+          </div>
+          <div
+            class="bg-opacity-90 flex h-80 w-80 flex-col items-center justify-between rounded-xl bg-gray-800 p-4 transition-all duration-300 hover:bg-gray-700"
+          >
+            <div class="flex w-full flex-1 items-center justify-center">
+              <img
+                src="../assets/databases.png"
+                alt="database"
+                class="h-64 w-64 object-contain"
+              />
+            </div>
+            <span class="mb-2 text-center text-2xl font-bold text-white"
+              >Databases, ORMs, etc.</span
             >
           </div>
         </div>
