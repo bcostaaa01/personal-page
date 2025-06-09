@@ -47,7 +47,7 @@ const subtexts = [
   'Hobbies: Lego, reading, coding, cycling, traveling and learning new things',
 ];
 
-const animatedElements = ref([]);
+const animatedElements = ref<Element[]>([]);
 const visible = ref(texts.map(() => false));
 
 onMounted(() => {
