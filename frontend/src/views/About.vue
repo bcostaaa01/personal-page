@@ -1,5 +1,5 @@
 <template>
-  <div class="space-y-12 p-8">
+  <div class="space-y-8 p-8">
     <div
       v-for="(text, index) in texts"
       :key="index"
@@ -13,7 +13,21 @@
       ]"
     >
       <h2 class="text-2xl font-semibold text-white">{{ text }}</h2>
-      <p class="mt-2 text-white">This text slides in as you scroll down.</p>
+      <p class="text-white">{{ subtexts[index] }}</p>
+    </div>
+    <div class="mt-4 flex flex-col">
+      <h2 class="text-2xl font-semibold text-white">Download my CV</h2>
+      <a
+        href="https://drive.google.com/file/d/1R3qXv7ukgp8lQbOtL4FAmxTEZeLt72B3/view?usp=sharing"
+        target="_blank"
+        class="mt-4 text-white"
+      >
+        <button
+          class="cursor-pointer rounded-md bg-blue-600 px-4 py-2 text-white transition-all duration-300 hover:scale-105 hover:bg-blue-700"
+        >
+          Download
+        </button>
+      </a>
     </div>
   </div>
 </template>
@@ -22,9 +36,15 @@
 import { ref, onMounted } from 'vue';
 
 const texts = [
-  'First sliding text',
-  'Second sliding text',
-  'Third sliding text',
+  'Bruno Costa',
+  'Software Engineer',
+  'Always excited to create and experience',
+];
+
+const subtexts = [
+  'Software Engineer',
+  'Passionate about software development, good design and flawless user experiences',
+  'Hobbies: Lego, reading, coding, cycling, traveling and learning new things',
 ];
 
 const animatedElements = ref([]);
