@@ -36,7 +36,6 @@ import { ref, onMounted, onBeforeUnmount } from 'vue';
 interface Props {
   label: string;
   icon: any;
-  href: string;
   items: {
     label: string;
     icon?: any;
