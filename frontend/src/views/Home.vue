@@ -117,18 +117,33 @@
         <h2 class="mb-8 text-center text-2xl font-bold text-white md:text-4xl">
           My favourite topics
         </h2>
-
-        <div class="flex flex-wrap justify-center gap-4">
+        <div class="grid grid-cols-2 justify-center gap-4">
           <div
-            class="bg-opacity-90 flex h-48 w-48 flex-col items-center justify-center rounded-xl bg-gray-800 transition-all duration-300 hover:bg-gray-700"
+            class="bg-opacity-90 flex h-80 w-80 flex-col items-center justify-between rounded-xl bg-gray-800 p-4 transition-all duration-300 hover:bg-gray-700"
           >
-            <img
-              src="../assets/lego.png"
-              alt="lego"
-              class="rounded-xl object-contain p-2"
-            />
-            <span class="text-center text-2xl font-bold text-white"
+            <div class="flex w-full flex-1 items-center justify-center">
+              <img
+                src="../assets/lego.png"
+                alt="lego"
+                class="h-64 w-64 object-contain"
+              />
+            </div>
+            <span class="mb-2 text-center text-2xl font-bold text-white"
               >Web Components</span
+            >
+          </div>
+          <div
+            class="bg-opacity-90 flex h-80 w-80 flex-col items-center justify-between rounded-xl bg-gray-800 p-4 transition-all duration-300 hover:bg-gray-700"
+          >
+            <div class="flex w-full flex-1 items-center justify-center">
+              <img
+                src="../assets/ui-design.png"
+                alt="ui-ux"
+                class="h-64 w-64 object-contain"
+              />
+            </div>
+            <span class="mb-2 text-center text-2xl font-bold text-white"
+              >UI + UX Development</span
             >
           </div>
         </div>
@@ -157,7 +172,7 @@
       </button>
       <!-- Invisible trigger for auto-scroll to links -->
       <div
-        ref="autoScrollTriggerTopics"
+        ref="topicsToLinksTrigger"
         class="pointer-events-none absolute bottom-0 left-0 h-2 w-full"
       ></div>
     </section>
@@ -217,11 +232,11 @@
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 
 const autoScrollTriggerHero = ref<HTMLElement | null>(null);
-const autoScrollTriggerTopics = ref<HTMLElement | null>(null);
+const topicsToLinksTrigger = ref<HTMLElement | null>(null);
 let observerHero: IntersectionObserver | null = null;
-let observerTopics: IntersectionObserver | null = null;
+let observerTopicsToLinks: IntersectionObserver | null = null;
 
-// scroll to the links section
+// scroll to the next section
 const scrollToNextSection = (section: string) => {
   const nextSection = document.getElementById(section);
   if (nextSection) {
@@ -234,7 +249,6 @@ onMounted(() => {
     observerHero = new IntersectionObserver(
       (entries) => {
         if (entries[0].isIntersecting) {
-          // when user reaches the bottom of the hero section, scroll to the topics section
           scrollToNextSection('topics');
         }
       },
@@ -245,11 +259,11 @@ onMounted(() => {
     );
     observerHero.observe(autoScrollTriggerHero.value);
   }
-  if (autoScrollTriggerTopics.value) {
-    observerTopics = new IntersectionObserver(
+
+  if (topicsToLinksTrigger.value) {
+    observerTopicsToLinks = new IntersectionObserver(
       (entries) => {
         if (entries[0].isIntersecting) {
-          // when user reaches the bottom of the topics section, scroll to the links section
           scrollToNextSection('links');
         }
       },
@@ -258,7 +272,7 @@ onMounted(() => {
         threshold: 1.0,
       }
     );
-    observerTopics.observe(autoScrollTriggerTopics.value);
+    observerTopicsToLinks.observe(topicsToLinksTrigger.value);
   }
 });
 
@@ -266,8 +280,8 @@ onBeforeUnmount(() => {
   if (observerHero && autoScrollTriggerHero.value) {
     observerHero.unobserve(autoScrollTriggerHero.value);
   }
-  if (observerTopics && autoScrollTriggerTopics.value) {
-    observerTopics.unobserve(autoScrollTriggerTopics.value);
+  if (observerTopicsToLinks && topicsToLinksTrigger.value) {
+    observerTopicsToLinks.unobserve(topicsToLinksTrigger.value);
   }
 });
 </script>
