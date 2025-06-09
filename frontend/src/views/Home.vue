@@ -45,7 +45,7 @@
               />
             </a>
           </div>
-          <span class="text-2xl font-bold text-white md:text-3xl">and</span>
+          <span class="text-2xl font-bold text-white md:text-3xl">, </span>
           <div
             class="bg-opacity-90 flex h-16 w-16 items-center justify-center rounded-xl bg-gray-800 transition-all duration-300 hover:bg-gray-700"
           >
@@ -57,6 +57,22 @@
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png"
                 alt="tailwind"
+                class="h-10 object-contain"
+              />
+            </a>
+          </div>
+          <span class="text-2xl font-bold text-white md:text-3xl">and</span>
+          <div
+            class="bg-opacity-90 flex h-16 w-16 items-center justify-center rounded-xl bg-gray-800 transition-all duration-300 hover:bg-gray-700"
+          >
+            <a
+              href="https://javascript.com/"
+              target="_blank"
+              class="flex h-full w-full items-center justify-center"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png"
+                alt="javascript"
                 class="h-10 object-contain"
               />
             </a>
