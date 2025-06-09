@@ -111,52 +111,57 @@
     <!-- the my favourite topics section -->
     <section
       id="topics"
-      class="relative min-h-screen w-full bg-gray-900 px-4 py-20"
+      class="relative min-h-screen w-full bg-gray-900 px-2 py-10 md:px-4 md:py-20"
     >
-      <div class="mx-auto px-20">
+      <div class="mx-auto w-full max-w-4xl px-2 md:px-20">
         <h2 class="mb-8 text-center text-2xl font-bold text-white md:text-4xl">
           My favourite topics
         </h2>
-        <div class="grid grid-cols-3 justify-center gap-10">
+        <div
+          class="grid grid-cols-1 justify-center gap-8 sm:grid-cols-2 md:grid-cols-3"
+        >
           <div
-            class="bg-opacity-90 flex h-80 w-80 flex-col items-center justify-between rounded-xl bg-gray-800 p-4 transition-all duration-300 hover:bg-gray-700"
+            class="bg-opacity-90 flex min-h-[18rem] min-w-0 flex-col items-center justify-between rounded-xl bg-gray-800 p-4 transition-all duration-300 hover:bg-gray-700"
           >
             <div class="flex w-full flex-1 items-center justify-center">
               <img
                 src="../assets/lego.png"
                 alt="lego"
-                class="h-64 w-64 object-contain"
+                class="h-64 w-64 object-contain md:h-64 md:w-64"
               />
             </div>
-            <span class="mb-2 text-center text-2xl font-bold text-white"
+            <span
+              class="mt-4 mb-2 text-center text-lg font-bold text-white md:text-2xl"
               >Web Components</span
             >
           </div>
           <div
-            class="bg-opacity-90 flex h-80 w-80 flex-col items-center justify-between rounded-xl bg-gray-800 p-4 transition-all duration-300 hover:bg-gray-700"
+            class="bg-opacity-90 flex min-h-[18rem] min-w-0 flex-col items-center justify-between rounded-xl bg-gray-800 p-4 transition-all duration-300 hover:bg-gray-700"
           >
             <div class="flex w-full flex-1 items-center justify-center">
               <img
                 src="../assets/ui-design.png"
                 alt="ui-ux"
-                class="h-64 w-64 object-contain"
+                class="h-64 w-64 object-contain md:h-64 md:w-64"
               />
             </div>
-            <span class="mb-2 text-center text-2xl font-bold text-white"
+            <span
+              class="mt-4 mb-2 text-center text-lg font-bold text-white md:text-2xl"
               >UI + UX Development</span
             >
           </div>
           <div
-            class="bg-opacity-90 flex h-80 w-80 flex-col items-center justify-between rounded-xl bg-gray-800 p-4 transition-all duration-300 hover:bg-gray-700"
+            class="bg-opacity-90 flex min-h-[18rem] min-w-0 flex-col items-center justify-between rounded-xl bg-gray-800 p-4 transition-all duration-300 hover:bg-gray-700"
           >
             <div class="flex w-full flex-1 items-center justify-center">
               <img
                 src="../assets/databases.png"
                 alt="database"
-                class="h-64 w-64 object-contain"
+                class="h-64 w-64 object-contain md:h-64 md:w-64"
               />
             </div>
-            <span class="mb-2 text-center text-2xl font-bold text-white"
+            <span
+              class="mt-4 mb-2 text-center text-lg font-bold text-white md:text-2xl"
               >Databases, ORMs, etc.</span
             >
           </div>
