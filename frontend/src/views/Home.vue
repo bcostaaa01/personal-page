@@ -100,23 +100,41 @@
         </h2>
         <div class="flex flex-wrap justify-center gap-4">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/bcostaaa01"
             target="_blank"
             class="text-white hover:text-gray-300"
             >GitHub</a
           >
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/bruno-miguel-alves-costa/"
             target="_blank"
             class="text-white hover:text-gray-300"
             >LinkedIn</a
           >
+        </div>
+
+        <span class="text-white text-center text-2xl font-bold mt-4 w-full block">
+          My articles on Dev.to
+        </span>
+
+        <div class="mt-4 flex flex-wrap justify-center gap-4">
           <a
-            href="https://twitter.com/yourusername"
-            target="_blank"
-            class="text-white hover:text-gray-300"
-            >Twitter</a
+            href="https://dev.to/bcostaaa01"
+            class="relative bg-opacity-90 flex h-full w-full cursor-pointer items-center justify-center rounded-xl bg-gray-800 transition-all duration-300 hover:scale-105 hover:border-2 hover:border-blue-500 hover:bg-gray-700 hover:shadow-lg group"
           >
+            <img
+              src="../assets/dev-to.png"
+              alt="dev-to"
+              class="h-full object-contain rounded-xl shadow-md group-hover:brightness-50 transition-all duration-300"
+            />
+            <div
+              class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-center px-4"
+            >
+              <span class="bg-black bg-opacity-70 p-2 rounded-lg">
+                Dev.to Profile
+              </span>
+            </div>
+          </a>
         </div>
       </div>
     </section>
